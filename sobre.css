@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family:"Poppins";
+}
+
+header {
+  width: 100%;
+  padding: 10px 8%;
+  background-color: #1b222b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-logo {
+  width: 125px;
+  height: 125px;
+}
+
+#nav_list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+
+.nav-item a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-family:"Poppins";
+}
+
+.nav-item a:hover {
+  color: #1941dc;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  background-color: #ff7147;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+  color: #ff7147;
+}
+
+.fundador{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: auto;
+    height: auto;
+    margin: 25px auto;
+}
+.fundador img{
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.teams{
+    text-align: center;
+    padding-top: 64px;
+}
+
+h2{
+    font-size: 40px;
+    color: #1953dc;
+}
+
+.fundador p{
+    width: auto;
+    height: auto;
+    display: flex;
+    font-size: 22px;
+    text-align: left;
+}
+.fundador h2 {
+    margin-bottom: 15px;
+}
+
+
+.teams .carousel .card{
+    background: none;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 30px 0px 0px 0px;
+}
+
+.teams .carousel .card:hover{
+    background: #1996dc;
+}
+
+.teams .carousel .card img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.411);
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img{
+    border-color: #0b184c;
+}
+
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+}
+
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.box p{
+    font-size: 20px;
+}
+
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.pintooo{ 
+    width: auto;
+    height: auto;
+    display: flex;
+    font-size: 22px; 
+    margin-bottom: 125px;
+    text-align: left;
+}
+.owl-dot{
+    width: 14px;
+    height: 14px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #1953dc!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 15px;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: #1953dc!important;
+}
+
+.text a{
+    color: black;
+}
